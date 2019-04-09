@@ -5,4 +5,4 @@ class Solution(object):
     def sortedSquares(self, A):
         return sorted(x*x for x in A)
         
-# Time Complexity: O(nlog(n)); Space Complexity: O(n)
+# Time complexity: O(nlog(n)); Space complexity: O(n)
