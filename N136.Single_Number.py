@@ -14,3 +14,11 @@ class Solution(object):
         
 # nums = [4, 2, 4, 2, 3]; hash_table = {3:1}; hash_table.popitem() = (3, 1)
 # Time complexity: O(n); Space complexity: O(n)
+
+# Solution 2: Math
+# use set() to get all the unique items.
+class Solution(object):
+    def singleNumber(self, nums):
+        return 2*sum(set(nums)) - sum(nums)
+
+# Time complexity: O(n+n); Space complexity: O(n)

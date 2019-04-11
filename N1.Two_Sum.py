@@ -2,7 +2,7 @@
 
 # Solution 1: Brute force
 def twoSum(nums, target):
-    for i, num1 in enumerate(nums, start = 0):
+    for i, num1 in enumerate(nums[: (len(nums) - 1)], start = 0):
         for j, num2 in enumerate(nums[i+1:], start = 1):
             if num1 + num2 == target:
                 return i, j
