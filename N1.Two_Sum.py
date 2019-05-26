@@ -28,6 +28,9 @@ def twoSum(nums, target):
         if target - num in hash_table:
             return hash_table[target - num], i
         hash_table[num] = i
+
+# Time Complexity: O(n)
+# Space Complexity: O(n)
         
 
 
