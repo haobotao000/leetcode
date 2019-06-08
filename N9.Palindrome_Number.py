@@ -29,8 +29,10 @@ class Solution(object):
                 y = y * 10 + temp % 10
                 temp = (temp - temp % 10) / 10
             return y == x
+# if the reversed number is larger than \text{int.MAX}int.MAX, we will hit integer overflow problem.
 
-# Solution 2
+
+# Solution 2： Revert half of the number
 class Solution(object):
     def isPalindrome(self, x):
         if x < 0 or (x % 10 ==0 and x != 0):
@@ -41,3 +43,5 @@ class Solution(object):
                 y = y * 10 + x % 10
                 x = x/10
             return x == y or y/10 == x
+            
+# x == y if the digits are of even number, y/10 == x if the digits are of odds number.
