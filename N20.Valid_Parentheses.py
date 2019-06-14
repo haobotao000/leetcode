@@ -12,7 +12,8 @@ class Solution(object):
         :rtype: bool
         """
         slack = ['a']
-        par_map = {')':'(', ']':'[', '}':'{'}
+        # Build a dictionary
+        par_map = {')':'(', ']':'[', '}':'{'} 
         for i in s:
             if i in par_map:
                 if par_map[i] != slack.pop():
